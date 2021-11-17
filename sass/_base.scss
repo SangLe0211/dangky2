@@ -25,7 +25,7 @@
 
             h3{
                 font-size: 32px;
-                font-family: 'Courgette', cursive;
+                font-family: 'Crimson Text', serif;
             }
         }
 
@@ -66,6 +66,35 @@
                
             }
         }
+        .button_next{
+            width: 170px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e29a16;
+            border: 1.5px solid #ffffff;
+            border-radius: 4px;
+            float: right;
+            margin-right: 30px;
+            outline: none;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+                font-size: 15px;
+                
+            }
+        }
+        .button_next:hover{
+            background-color: white;
+            border: 1.5px solid #e29a16;
+            transition: 0.2s linear;
+        }
+        .button_next:hover > a{
+            color: #e29a16;
+        }
+        
     }
 }
 
