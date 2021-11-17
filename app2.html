@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Google reCaptcha v2 - Demo Login</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-signin" role="form" action="validateform.php" method="POST">
+        <div id="status"></div>
+        <h2 class="form-signin-heading">Đăng nhập</h2>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" name="txtuser" id="inputEmail" value="" class="form-control" placeholder="Tên đăng nhập" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="txtpass" id="inputPassword" value="" class="form-control" placeholder="Mật khẩu" required>
+        <div class="g-recaptcha" data-sitekey="6LcnV_8SAAAAAGBwDp38k-tY1c9sugh27MJqPuO4"></div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="ok">Đăng nhập</button>
+      </form>
+    <div style=" text-align:center;font-size:12px;margin-top:20px"><span class="msg">Chú ý:</span> Tên đăng nhập: <strong>nhatchanh.info</strong> | Mật khẩu: <strong>admin</strong></div> 
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>        
+  </body>
+</html>
